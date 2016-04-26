@@ -200,7 +200,7 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="content">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="myApp">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
@@ -208,14 +208,14 @@
 										
 										<div class="field half first">
 											<label for="password">Password</label>
-											<input type="password" name="password" id="email" />
+											<input type="password" name="password" id="pass" />
 										</div>
 <!-- 										<div class="field"> -->
 <!-- 											<label for="message">message</label> -->
 <!-- 											<textarea name="message" id="message" rows="5"></textarea> -->
 <!-- 										</div> -->
 										<ul class="actions">
-											<li><a href="" class="button submit">Login</a></li>
+											<li><a href="login" class="button submit">Login</a></li>
 										</ul>
 									</form>
 								</section>
