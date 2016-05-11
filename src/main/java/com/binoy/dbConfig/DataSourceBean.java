@@ -1,4 +1,4 @@
-package com.binoy.db;
+package com.binoy.dbConfig;
 
 import javax.sql.DataSource;
 

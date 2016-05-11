@@ -1,14 +1,15 @@
 package com.binoy.pojo;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Login {
 	
-	//@NotEmpty(message="Please enter your username")
+	@NotEmpty(message="Please enter your username")
 	String username;
 	
-	//@NotEmpty(message="Please enter your password")
+	@NotEmpty(message="Please enter your password")
 	
 	String password;
 	

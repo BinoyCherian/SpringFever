@@ -206,11 +206,13 @@
 										<div class="field half first">
 											<label for="username">Name</label>
 											<form:input type="text" path="username" id="name" />
+											<form:errors path="username"/>
 										</div>
 										
 										<div class="field half first">
 											<label for="password">Password</label>
 											<form:input type="password" path="password" id="pass" />
+											<form:errors path="password" />
 										</div>
 <!-- 										<div class="field"> -->
 <!-- 											<label for="message">message</label> -->

@@ -38,18 +38,20 @@
 	
 	<bean depends-on="dataSource"
 	class="org.springframework.beans.factory.config.MethodInvokingBean">
-	<property name="targetClass" value="org.hsqldb.util.DatabaseManagerSwing" />
+	<property name="targetClass" value="${dbClassName}" />
 	<property name="targetMethod" value="main" />
 	<property name="arguments">
 		<list>
 			<value>--url</value>
-			<value>jdbc:hsqldb:mem:dataSource</value>
+			<value>${dbUrl}</value>
 			<value>--user</value>
-			<value>sa</value>
+			<value>${dbUserName}</value>
 			<value>--password</value>
-			<value></value>
+			<value>${dbPassword}</value>
 		</list>
 	</property>
 </bean>
+
+<context:property-placeholder location="classpath:/resources/dbInfo.properties"/>
 
 </beans>

@@ -1,4 +1,4 @@
-package com.binoy.db;
+package com.binoy.dbConfig;
 
 import javax.sql.DataSource;
 
@@ -8,7 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SpringRootConfig {
+public class DbConfig {
 
 	@Autowired
 	DataSource dataSource;
